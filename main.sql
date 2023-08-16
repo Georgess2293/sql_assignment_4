@@ -151,6 +151,7 @@ LEFT JOIN public.inventory AS se_inventory
 ON CTE_Higher_rentals.film_id=se_inventory.film_id
 WHERE se_inventory.inventory_id=NULL
 
+-- There is no correlation between rental frequency and the rating since the average on ratings are more or less close
 
 --6 Calculate the replacement cost of lost films for each store, considering the rental history.
 
